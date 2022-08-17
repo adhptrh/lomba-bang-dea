@@ -16,8 +16,9 @@
         }
 
         html {
-            scroll-behavior: smooth;
-        }
+  scroll-behavior: smooth;
+}
+
 
         *::-webkit-scrollbar {
             width: 0px;
@@ -27,7 +28,31 @@
             box-sizing: border-box;
         }
 
+        @keyframes animdown {
+            0% {
+                margin-top: -100vh;
+                opacity: 0;
+            }
+            100% {
+                margin-top: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes animdown2 {
+            0% {
+                top: -100vh;
+                opacity: 0;
+            }
+            100% {
+                top: 0;
+                opacity: 0.3;
+            }
+        }
+
+
         .horiz {
+            animation: animdown 1s;
             height: 100vw;
             width: 100vh;
             transform-origin: right top;
@@ -71,6 +96,17 @@
         .hoverfade:hover {
             opacity: 1;
         }
+
+        .rotatetrans {
+            transform: rotate(0deg);
+            transition: 0.2s;
+        }
+        .rotatetrans:hover {
+            transform: rotate(5deg);
+        }
+        .card {
+            animation:animdown2 1s;
+        }
     </style>
 </head>
 
@@ -78,19 +114,19 @@
     <div class="horiz">
         <div class="z white" style="min-height:1900px!important;">
             <div style="position:absolute;">
-                <a href="#1"><img class="img hoverfade" style="position:absolute;margin-left:6rem;margin-top:24rem;"
+                <a href="#1"><img class="img rotatetrans card hoverfade" style="position:absolute;margin-left:6rem;margin-top:24rem;"
                         width="300px" src="images/myamin.jpg"></a>
-                <a href="#2"><img class="img hoverfade" style="position:absolute;margin-left:20rem;margin-top:18rem;"
+                <a href="#2"><img class="img rotatetrans card hoverfade" style="position:absolute;margin-left:20rem;margin-top:18rem;"
                         width="300px" src="images/syahrir.jpg"></a>
-                <a href="#3"><img class="img hoverfade" style="position:absolute;margin-left:35rem;margin-top:23rem;"
+                <a href="#3"><img class="img rotatetrans card hoverfade" style="position:absolute;margin-left:35rem;margin-top:23rem;"
                         width="300px" src="images/sudirman.jpg"></a>
-                <a href="#4"><img class="img hoverfade" style="position:absolute;margin-left:50rem;margin-top:15rem;"
+                <a href="#4"><img class="img rotatetrans card hoverfade" style="position:absolute;margin-left:50rem;margin-top:15rem;"
                         width="300px" src="images/soekarno.jpg"></a>
-                <a href="#5"><img class="img hoverfade" style="position:absolute;margin-left:65rem;margin-top:20rem;"
+                <a href="#5"><img class="img rotatetrans card hoverfade" style="position:absolute;margin-left:65rem;margin-top:20rem;"
                         width="300px" src="images/hatta.jpg"></a>
-                <a href="#6"><img class="img hoverfade" style="position:absolute;margin-left:80rem;margin-top:10rem;"
+                <a href="#6"><img class="img rotatetrans card hoverfade" style="position:absolute;margin-left:80rem;margin-top:10rem;"
                         width="300px" src="images/kihajar.jpg"></a>
-                <a href="#7"><img class="img hoverfade" style="position:absolute;margin-left:95rem;margin-top:24rem;"
+                <a href="#7"><img class="img rotatetrans card hoverfade" style="position:absolute;margin-left:95rem;margin-top:24rem;"
                         width="300px" src="images/kartini.jpg"></a>
             </div>
 
@@ -103,7 +139,7 @@
         <div id="1" class="z black" style="color:white;">
             <div style="display:flex;margin-left:6rem;margin-top:4rem;margin-right:6rem;">
                 <div>
-                    <img class="img" style="margin-top:4rem;" width="300px" src="images/myamin.jpg">
+                    <img class="img rotatetrans" style="margin-top:4rem;" width="300px" src="images/myamin.jpg">
                 </div>
                 <div>
                     <div style="font-size: 4.2rem; max-width:800px; padding-left:4rem; padding-top: 4rem;">Mohammad
@@ -126,7 +162,7 @@
         <div id="2" class="z white">
             <div style="display:flex;margin-left:6rem;margin-top:4rem;margin-right:6rem;">
                 <div>
-                    <img class="img" style="margin-top:4rem;" width="300px" src="images/syahrir.jpg">
+                    <img class="img rotatetrans" style="margin-top:4rem;" width="300px" src="images/syahrir.jpg">
                 </div>
                 <div>
                     <div style="font-size: 4.2rem; max-width:800px; padding-left:4rem; padding-top: 4rem;">Sutan Syahrir
@@ -153,7 +189,7 @@
         <div id="3" class="z black" style="color:white;">
             <div style="display:flex;margin-left:6rem;margin-top:4rem;margin-right:6rem;">
                 <div>
-                    <img class="img" style="margin-top:4rem;" width="300px" src="images/sudirman.jpg">
+                    <img class="img rotatetrans" style="margin-top:4rem;" width="300px" src="images/sudirman.jpg">
                 </div>
                 <div>
                     <div style="font-size: 4.2rem; max-width:800px; padding-left:4rem; padding-top: 4rem;">Jenderal
@@ -182,7 +218,7 @@
         <div id="4" class="z white">
             <div style="display:flex;margin-left:6rem;margin-top:4rem;margin-right:6rem;">
                 <div>
-                    <img class="img" style="margin-top:4rem;" width="300px" src="images/soekarno.jpg">
+                    <img class="img rotatetrans" style="margin-top:4rem;" width="300px" src="images/soekarno.jpg">
                 </div>
                 <div>
                     <div style="font-size: 4.2rem; max-width:800px; padding-left:4rem; padding-top: 4rem;">Ir. Soekarno</div>
@@ -207,7 +243,7 @@
         <div id="5" class="z black" style="color:white;">
             <div style="display:flex;margin-left:6rem;margin-top:4rem;margin-right:6rem;">
                 <div>
-                    <img class="img" style="margin-top:4rem;" width="300px" src="images/hatta.jpg">
+                    <img class="img rotatetrans" style="margin-top:4rem;" width="300px" src="images/hatta.jpg">
                 </div>
                 <div>
                     <div style="font-size: 4.2rem; max-width:800px; padding-left:4rem; padding-top: 4rem;">Mohammad Hatta</div>
@@ -230,7 +266,7 @@
         <div id="6" class="z white">
             <div style="display:flex;margin-left:6rem;margin-top:4rem;margin-right:6rem;">
                 <div>
-                    <img class="img" style="margin-top:4rem;" width="300px" src="images/kihajar.jpg">
+                    <img class="img rotatetrans" style="margin-top:4rem;" width="300px" src="images/kihajar.jpg">
                 </div>
                 <div>
                     <div style="font-size: 4.2rem; max-width:800px; padding-left:4rem; padding-top: 4rem;">Ki Hajar Dewantara</div>
@@ -257,7 +293,7 @@
         <div id="7" class="z black" style="color:white;">
             <div style="display:flex;margin-left:6rem;margin-top:4rem;margin-right:6rem;">
                 <div>
-                    <img class="img" style="margin-top:4rem;" width="300px" src="images/kartini.jpg">
+                    <img class="img rotatetrans" style="margin-top:4rem;" width="300px" src="images/kartini.jpg">
                 </div>
                 <div>
                     <div style="font-size: 4.2rem; max-width:800px; padding-left:4rem; padding-top: 4rem;">R.A. Kartini</div>
