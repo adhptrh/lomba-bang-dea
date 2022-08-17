@@ -2,6 +2,8 @@
 
 Website ini menceritakan 7 pahlawan indonesia dalam melawan penjajah
 
+https://adhptrh.github.io/lomba-bang-dea/
+
 ## Pengumpulan Lomba CuyUniverse 
 
 | Title        |   | Description                    |   
