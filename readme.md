@@ -13,7 +13,7 @@ https://adhptrh.github.io/lomba-bang-dea/
 | **Tema**       | : | Perlawanan Perjajahan 1945 |
 | **Category**    | : | Desain Website                 |
 | **Animasi Digunakan** | : | CSS Keyframe, transition |
-| **Font Digunakan** | : | Ex. [Rubik Marker Hatch](https://fonts.google.com/specimen/Rubik+Marker+Hatch) |
+| **Font Digunakan** | : | [Rubik Marker Hatch](https://fonts.google.com/specimen/Rubik+Marker+Hatch) |
 | **Referensi** | : | Tidak ada |
 
 *Note: Nama Author harus di cantum di salah satu di file project, untuk mendapatkan userId discord bisa ke #main-cmd dan ketik `/userinfo <NamaDiscordAnda>`
